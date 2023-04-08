@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link ,Routes } from 'react-router-dom';
 
 function Dashboard() {
   return (
@@ -9,34 +8,30 @@ function Dashboard() {
         <nav>
           <ul className="nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/visualizer">Visualizer</Link>
+              <Link className="nav-link" to="/option1">Option 1</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/profile">Profile</Link>
+              <Link className="nav-link" to="/option2">Option 2</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/puzzles">Puzzles</Link>
+              <Link className="nav-link" to="/option3">Option 3</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/option4">Option 4</Link>
             </li>
           </ul>
         </nav>
 
-        <Switch>
-          <Route path="/visualizer">
-            <h2>Visualizer</h2>
+        <Routes>
+          <Route path="/option1" element={<><h2>Option 1</h2></>}>
           </Route>
-          <Route path="/profile">
-            <h2>Profile</h2>
+          <Route path="/option2" element={<><h2>Option 1</h2></>}>
           </Route>
-          <Route path="/puzzles">
-            <h2>Puzzles</h2>
+          <Route path="/option3" element={<><h2>Option 1</h2></>}>
           </Route>
-          <Route path="/contact">
-            <h2>Contact</h2>
+          <Route path="/option4" element={<><h2>Option 1</h2></>}>
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </Router>
   );
