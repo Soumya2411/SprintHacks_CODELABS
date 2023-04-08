@@ -9,32 +9,32 @@ function Dashboard() {
         <nav>
           <ul className="nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/option1">Option 1</Link>
+              <Link className="nav-link" to="/visualizer">Visualizer</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/option2">Option 2</Link>
+              <Link className="nav-link" to="/profile">Profile</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/option3">Option 3</Link>
+              <Link className="nav-link" to="/puzzles">Puzzles</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/option4">Option 4</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
 
         <Switch>
-          <Route path="/option1">
-            <h2>Option 1</h2>
+          <Route path="/visualizer">
+            <h2>Visualizer</h2>
           </Route>
-          <Route path="/option2">
-            <h2>Option 2</h2>
+          <Route path="/profile">
+            <h2>Profile</h2>
           </Route>
-          <Route path="/option3">
-            <h2>Option 3</h2>
+          <Route path="/puzzles">
+            <h2>Puzzles</h2>
           </Route>
-          <Route path="/option4">
-            <h2>Option 4</h2>
+          <Route path="/contact">
+            <h2>Contact</h2>
           </Route>
         </Switch>
       </div>
